@@ -1,0 +1,28 @@
+# Escenario default-core. Cambia project.name.
+# Catálogo: sdaf-core/sdaf.config.schema.yaml y sdaf-core/examples/
+
+sdaf:
+  version: "0.1.0"
+
+project:
+  name: MiProyecto
+  language: es
+
+stack:
+  pack: null
+  src_path: src
+  tests_path: tests
+
+agents:
+  active:
+    - specification
+    - architecture
+    - testing-review
+  stubs:
+    - product
+    - domain
+    - application
+    - devops
+    - review
+    - testing
+  fusions: {}

@@ -1,0 +1,3 @@
+[submodule "sdaf-core"]
+	path = sdaf-core
+	url = https://github.com/Cyberdine-Systems-Corporation/sdaf-core.git
