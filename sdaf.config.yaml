@@ -1,8 +1,9 @@
 # Escenario default-core. Cambia project.name.
 # Catálogo: sdaf-core/sdaf.config.schema.yaml y sdaf-core/examples/
+# Pack opcional: deja null; para .NET ver sdaf-stack-dotnet@0.1.0 (ADOPT del pack).
 
 sdaf:
-  version: "0.1.0"
+  version: "0.2.0"
 
 project:
   name: MiProyecto
