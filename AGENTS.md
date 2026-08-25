@@ -2,28 +2,30 @@
 
 | Campo | Valor |
 |--------|--------|
-| Versión | 0.1.0 |
+| Versión | 0.2.0 |
 | Estado | Draft |
 | Fecha | YYYY-MM-DD |
-| Norma | `sdaf-core/handbook/13-ai-agent-framework.md`, `sdaf-core/handbook/14-prompt-engineering-standard.md`, `sdaf-core/handbook/15-agent-traceability.md`, `sdaf-core/skills/README.md` |
+| Norma | `sdaf-core/handbook/06-ai-agent-framework.md`, `sdaf-core/handbook/07-prompt-engineering-standard.md`, `sdaf-core/handbook/08-agent-traceability.md`, `sdaf-core/skills/README.md` |
 | Config | `sdaf.config.yaml` |
-| Core | submodule `sdaf-core` @ `v0.1.0` |
+| Core | submodule `sdaf-core` @ `v0.2.0` |
 
 ---
 
 ## Propósito
 
 Índice operativo para agentes de **ingeniería**.  
-Antes de cualquier feature: Gate 0 (`sdaf-core/handbook/09-development-workflow.md` + skill `sdaf-gate0`).
+Antes de cualquier feature: Gate 0 (`sdaf-core/handbook/05-development-workflow.md` + skill `sdaf-gate0`).
 
 ## Modelo
 
-Declarado en `sdaf.config.yaml`:
+Declarado en `sdaf.config.yaml` (`stack.pack: null` en esta plantilla):
 
 | Estado | Agentes |
 |--------|---------|
 | **Activo** | Specification, Architecture, Testing+Review |
 | **Stub** | Product, Domain, Application, DevOps, Review, Testing |
+
+Fusiones o `frontend` / `domain-application` se añaden con un pack (`sdaf-stack-*`) o contratos locales.
 
 ## Handoff canónico
 
@@ -49,6 +51,9 @@ Specification → Architecture → (implementación del consumidor / pack)
 ## Skills
 
 [`sdaf-core/skills/`](sdaf-core/skills/) — citar `skill-id@version` en worklogs.
+
+Alta: `sdaf-gate0`, `sdaf-worklog-handoff`, `sdaf-agent-router`, `sdaf-bootstrap`.  
+Media: `spec-draft-pbi`, `adr-propose`, `sdaf-upgrade`.
 
 ## Restricciones globales
 
