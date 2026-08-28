@@ -24,6 +24,17 @@ git checkout v0.2.0
 cd ..
 ```
 
+## 2b. Materializar core (recomendado)
+
+Enlaza skills, agentes, prompts y regla de idioma del core sin copias:
+
+```powershell
+git config core.symlinks true
+.\scripts\materialize-submodules.ps1 -Force
+```
+
+Detalle: [`docs/materializacion-submodules.md`](docs/materializacion-submodules.md). Tras esto, usa rutas `agents/…` y `skills/…` (symlinks) además de `sdaf-core/…`.
+
 ## 3. Rellenar el árbol SDAF
 
 | Paso | Acción |
@@ -53,7 +64,7 @@ Esta plantilla **no** incluye pack. Para .NET:
 
 1. Añadir submodule `sdaf-stack-dotnet` @ `v0.1.0`.
 2. `stack.pack: sdaf-stack-dotnet@0.1.0` en `sdaf.config.yaml`.
-3. Seguir `sdaf-stack-dotnet/ADOPT.md` (materializar agentes/skills).
+3. Ejecutar `.\scripts\materialize-submodules.ps1 -Force` (añade enlaces del pack; ver [`docs/materializacion-submodules.md`](docs/materializacion-submodules.md) y `sdaf-stack-dotnet/ADOPT.md`).
 
 Referencia: [sdaf-smoke-core-pack](https://github.com/Cyberdine-Systems-Corporation/sdaf-smoke-core-pack).
 
