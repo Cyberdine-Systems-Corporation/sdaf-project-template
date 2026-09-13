@@ -6,7 +6,7 @@
 | Estado | Draft |
 | Fecha | YYYY-MM-DD |
 
-Constitución de **producto** de este repo. El método está en [`sdaf-core/handbook/`](../sdaf-core/handbook/README.md) (sdaf-core@v0.2.0: Parte I 01–05, Parte II 06–08, apéndice A).
+Constitución de **producto** de este repo. El método está en [`sdaf-core/handbook/`](../sdaf-core/handbook/README.md) (sdaf-core@v0.2.1: Parte I 01–05, Parte II 06–08, apéndice A).
 
 | Cap. | Archivo | Título | Estado |
 |------|---------|--------|--------|

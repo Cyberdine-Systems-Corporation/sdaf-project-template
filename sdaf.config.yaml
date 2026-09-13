@@ -3,7 +3,7 @@
 # Pack opcional: deja null; para .NET ver sdaf-stack-dotnet@0.1.0 (ADOPT del pack).
 
 sdaf:
-  version: "0.2.0"
+  version: "0.2.1"
 
 project:
   name: MiProyecto
