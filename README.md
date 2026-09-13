@@ -15,9 +15,13 @@ Smokes de adopción:
 ```powershell
 git clone --recurse-submodules https://github.com/<ORG>/<TU-REPO>.git
 cd <TU-REPO>
+git config core.symlinks true
+.\scripts\materialize-submodules.ps1 -Force
 ```
 
 3. Sigue [BOOTSTRAP.md](BOOTSTRAP.md).
+
+Materialización: [`docs/materializacion-submodules.md`](docs/materializacion-submodules.md) (core al clonar; pack tras adoptarlo).
 
 ## Qué incluye
 
@@ -28,6 +32,8 @@ cd <TU-REPO>
 | `AGENTS.md` | Router (ajusta nombre; citas handbook 0.2) |
 | `handbook/` | Stubs de constitución de **producto** (Draft) |
 | `knowledge/`, `specs/`, `architecture/`, `backlog/`, `worklogs/` | Árbol SDAF vacío / con README |
+| `scripts/materialize-submodules.*` | Symlinks core (+ pack si existe) |
+| `docs/materializacion-submodules.md` | HOWTO materialización |
 | `src/`, `tests/` | Placeholders (`stack.src_path` / `tests_path`) |
 
 ## Qué no incluye

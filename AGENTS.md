@@ -36,24 +36,27 @@ Specification → Architecture → (implementación del consumidor / pack)
 
 ## Inventario
 
+Tras [`scripts/materialize-submodules.ps1`](scripts/materialize-submodules.ps1) (`-Force`), contratos y prompts en `agents/` y `prompts/agents/` son symlinks al pin del core (y del pack si existe). Ver [`docs/materializacion-submodules.md`](docs/materializacion-submodules.md).
+
 | Agente | Contrato | Prompt | Estado |
 |--------|----------|--------|--------|
-| Specification | [sdaf-core/agents/specification-agent.md](sdaf-core/agents/specification-agent.md) | [sdaf-core/prompts/agents/specification-agent.md](sdaf-core/prompts/agents/specification-agent.md) | active |
-| Architecture | [sdaf-core/agents/architecture-agent.md](sdaf-core/agents/architecture-agent.md) | [sdaf-core/prompts/agents/architecture-agent.md](sdaf-core/prompts/agents/architecture-agent.md) | active |
-| Testing+Review | [sdaf-core/agents/testing-review-agent.md](sdaf-core/agents/testing-review-agent.md) | [sdaf-core/prompts/agents/testing-review-agent.md](sdaf-core/prompts/agents/testing-review-agent.md) | active |
-| Product | [sdaf-core/agents/product-agent.md](sdaf-core/agents/product-agent.md) | [sdaf-core/prompts/agents/product-agent.md](sdaf-core/prompts/agents/product-agent.md) | stub |
-| Domain | [sdaf-core/agents/domain-agent.md](sdaf-core/agents/domain-agent.md) | [sdaf-core/prompts/agents/domain-agent.md](sdaf-core/prompts/agents/domain-agent.md) | stub |
-| Application | [sdaf-core/agents/application-agent.md](sdaf-core/agents/application-agent.md) | [sdaf-core/prompts/agents/application-agent.md](sdaf-core/prompts/agents/application-agent.md) | stub |
-| DevOps | [sdaf-core/agents/devops-agent.md](sdaf-core/agents/devops-agent.md) | [sdaf-core/prompts/agents/devops-agent.md](sdaf-core/prompts/agents/devops-agent.md) | stub |
-| Review | [sdaf-core/agents/review-agent.md](sdaf-core/agents/review-agent.md) | [sdaf-core/prompts/agents/review-agent.md](sdaf-core/prompts/agents/review-agent.md) | stub |
-| Testing | [sdaf-core/agents/testing-agent.md](sdaf-core/agents/testing-agent.md) | [sdaf-core/prompts/agents/testing-agent.md](sdaf-core/prompts/agents/testing-agent.md) | stub |
+| Specification | [agents/specification-agent.md](agents/specification-agent.md) | [prompts/agents/specification-agent.md](prompts/agents/specification-agent.md) | active |
+| Architecture | [agents/architecture-agent.md](agents/architecture-agent.md) | [prompts/agents/architecture-agent.md](prompts/agents/architecture-agent.md) | active |
+| Testing+Review | [agents/testing-review-agent.md](agents/testing-review-agent.md) | [prompts/agents/testing-review-agent.md](prompts/agents/testing-review-agent.md) | active |
+| Product | [agents/product-agent.md](agents/product-agent.md) | [prompts/agents/product-agent.md](prompts/agents/product-agent.md) | stub |
+| Domain | [agents/domain-agent.md](agents/domain-agent.md) | [prompts/agents/domain-agent.md](prompts/agents/domain-agent.md) | stub |
+| Application | [agents/application-agent.md](agents/application-agent.md) | [prompts/agents/application-agent.md](prompts/agents/application-agent.md) | stub |
+| DevOps | [agents/devops-agent.md](agents/devops-agent.md) | [prompts/agents/devops-agent.md](prompts/agents/devops-agent.md) | stub |
+| Review | [agents/review-agent.md](agents/review-agent.md) | [prompts/agents/review-agent.md](prompts/agents/review-agent.md) | stub |
+| Testing | [agents/testing-agent.md](agents/testing-agent.md) | [prompts/agents/testing-agent.md](prompts/agents/testing-agent.md) | stub |
+
+Antes de materializar, las mismas rutas viven bajo `sdaf-core/agents/` y `sdaf-core/prompts/agents/`.
 
 ## Skills
 
-[`sdaf-core/skills/`](sdaf-core/skills/) — citar `skill-id@version` en worklogs.
+[`skills/`](skills/) tras materializar (symlinks al core). Índice: [skills/README.md](skills/README.md). Cursor: `.cursor/skills/<id>`.
 
-Alta: `sdaf-gate0`, `sdaf-worklog-handoff`, `sdaf-agent-router`, `sdaf-bootstrap`.  
-Media: `spec-draft-pbi`, `adr-propose`, `sdaf-upgrade`.
+Citar `skill-id@version` en worklogs. Alta: `sdaf-gate0`, `sdaf-worklog-handoff`, `sdaf-agent-router`, `sdaf-bootstrap`.
 
 ## Restricciones globales
 
