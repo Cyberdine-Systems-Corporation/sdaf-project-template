@@ -2,12 +2,12 @@
 
 | Campo | Valor |
 |--------|--------|
-| Versión | 0.2.0 |
+| Versión | 0.2.1 |
 | Estado | Draft |
 | Fecha | YYYY-MM-DD |
 | Norma | `sdaf-core/handbook/06-ai-agent-framework.md`, `sdaf-core/handbook/07-prompt-engineering-standard.md`, `sdaf-core/handbook/08-agent-traceability.md`, `sdaf-core/skills/README.md` |
 | Config | `sdaf.config.yaml` |
-| Core | submodule `sdaf-core` @ `v0.2.0` |
+| Core | submodule `sdaf-core` @ `v0.2.1` |
 
 ---
 

@@ -1,6 +1,6 @@
 # SDAF Project Template
 
-Plantilla para **iniciar un proyecto consumidor** de [`sdaf-core`](https://github.com/Cyberdine-Systems-Corporation/sdaf-core) (`v0.2.0`).
+Plantilla para **iniciar un proyecto consumidor** de [`sdaf-core`](https://github.com/Cyberdine-Systems-Corporation/sdaf-core) (`v0.2.1`).
 
 Smokes de adopción:
 
@@ -27,7 +27,7 @@ Materialización: [`docs/materializacion-submodules.md`](docs/materializacion-su
 
 | Ruta | Rol |
 |------|-----|
-| `sdaf-core/` | Submodule pinneado a `v0.2.0` |
+| `sdaf-core/` | Submodule pinneado a `v0.2.1` |
 | `sdaf.config.yaml` | Config default-core (`pack: null`; cambia `project.name`) |
 | `AGENTS.md` | Router (ajusta nombre; citas handbook 0.2) |
 | `handbook/` | Stubs de constitución de **producto** (Draft) |

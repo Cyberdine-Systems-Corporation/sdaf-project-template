@@ -1,6 +1,6 @@
 # Bootstrap — nuevo proyecto desde esta plantilla
 
-Compatible con **sdaf-core@v0.2.0**. Guía larga del método: `sdaf-core/docs/adopcion-y-upgrade.md`. Skill: `sdaf-core/skills/sdaf-bootstrap`.
+Compatible con **sdaf-core@v0.2.1**. Guía larga del método: `sdaf-core/docs/adopcion-y-upgrade.md`. Skill: `sdaf-core/skills/sdaf-bootstrap`.
 
 ## 1. Renombrar el producto
 
@@ -12,7 +12,7 @@ Compatible con **sdaf-core@v0.2.0**. Guía larga del método: `sdaf-core/docs/ad
 
 ```powershell
 git submodule status
-# Debe mostrar sdaf-core (v0.2.0)
+# Debe mostrar sdaf-core (v0.2.1)
 ```
 
 Si el submodule está vacío:
@@ -20,7 +20,7 @@ Si el submodule está vacío:
 ```powershell
 git submodule update --init --recursive
 cd sdaf-core
-git checkout v0.2.0
+git checkout v0.2.1
 cd ..
 ```
 
